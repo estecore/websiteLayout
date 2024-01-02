@@ -403,4 +403,36 @@ body {
 }
 
 
+/* portfolio */
+
+.portfolio {
+
+}
+.portfolio__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 0;
+}
+.portfolio__grid-item {
+
+}
+.portfolio__img {
+
+}
+
+@media screen and (max-width: 1280px) {
+
+    .portfolio__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+@media screen and (max-width: 760px) {
+    
+    .portfolio__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
 /*  */
