@@ -535,3 +535,52 @@ body {
 
 
 /* reviews */
+
+.reviews {
+    padding: 150px 0 142px;
+}
+.reviews__h2 {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.reviews__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.reviews__grid-item {
+
+}
+
+.reviews__card {
+    background-color: #f7f7f7;
+    padding: 28px 30px;
+    margin-bottom: 35px;
+}
+.reviews__quotes {
+    font-weight: 700;
+    font-size: 96px;
+    color: var(--accent-color);
+    line-height: 1;
+    margin-bottom: -40px;
+}
+.reviews__author-accent {
+    color: var(--accent-color);
+}
+
+@media screen and (max-width: 1280px) {
+
+    .reviews {
+        padding: 100px 15px;
+    }
+    .reviews__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
+@media screen and (max-width: 760px) {
+    
+    .reviews__grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
