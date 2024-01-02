@@ -15,11 +15,28 @@
 
     <title>Test Site Layout</title>
 
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
 
 </head>
 
 <body>
+
+
+    <!-- sidenav -->
+
+    <ul id="slide-out" class="sidenav">
+        <li><a href="#!"><i class="material-icons">home</i>Главная</a></li>
+        <li><a href="#!"><i class="material-icons">people</i>О нас</a></li>
+        <li><a href="#!"><i class="material-icons">grade</i>Услуги</a></li>
+        <li><a href="#!"><i class="material-icons">phone</i>Контакты</a></li>
+        <li><div class="divider"></div></li>
+        <li><a href="#!" class="sidenav-close"><i class="material-icons">close</i>Закрыть</a></li>
+      </ul>
+
+    <!-- /sidenav -->
 
 
     <!-- header -->
@@ -29,11 +46,11 @@
 
             <div class="header-title">
                 <img src="assets/images/svg/logo.svg" alt="logo" class="logo">
-                <button class="burger">
+                <a class="burger sidenav-trigger" data-target="slide-out">
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
                     <span class="burger__line"></span>
-                </button>
+                </a>
             </div>
 
             <h1 class="h1">реализуем крупнейшие проекты в россии</h1>
@@ -127,6 +144,21 @@
     <!-- /.about -->
 
 
+  <!-- Modal Structure -->
+
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Заголовок Окна</h4>
+      <p>
+        Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. 
+        Текстов напоивший гор, своих языкового по всей жизни парадигматическая свою грамматики алфавит текстами за переписали повстречался не образ буквенных но на берегу?
+      </p>
+    </div>
+  </div>
+  
+  <!-- /modal -->
+
+
     <!-- request -->
 
     <section class="requets">
@@ -138,10 +170,10 @@
                     <h5 class="request__h5">Реализуем самые смелые решения в России!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal1">
                         <img class="request__icon" src="assets/images/svg/icons/mail-black.svg" alt="mail">
                         Ваш запрос
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -204,28 +236,28 @@
         <div class="portfolio__grid">
 
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
             <div class="portfolio__grid-item">
-                <img class="portfolio__img" src="assets/images/building.png" alt="portfolio__img">
+                <img class="portfolio__img materialboxed" width="480px" src="assets/images/building.png" alt="portfolio__img">
             </div>
 
         </div> <!-- /.portfolio__grid -->
@@ -243,45 +275,45 @@
 
             <div class="question__items">
 
-                <div class="question__item">
-                    <h3 class="text-h3 question__h3 close">Работаете ли вы по 249 ФЗ?</h3>
+                <details class="question__item">
+                    <summary class="text-h3 question__h3">Работаете ли вы по 249 ФЗ?</summary>
                     <p class="text-p question__p">
                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                         В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
                         используя Lorem Ipsum для распечатки образцов. 
                     </p>
-                </div>
+                </details>
 
-                <div class="question__item">
-                    <h3 class="text-h3 question__h3 open">Работаете ли вы по 249 ФЗ?</h3>
+                <details class="question__item">
+                    <summary class="text-h3 question__h3">Работаете ли вы по 249 ФЗ?</summary>
                     <p class="text-p question__p">
                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                         В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
                         используя Lorem Ipsum для распечатки образцов. 
                     </p>
-                </div>
+                </details>
 
-                <div class="question__item">
-                    <h3 class="text-h3 question__h3 close">Работаете ли вы по 249 ФЗ?</h3>
+                <details class="question__item">
+                    <summary class="text-h3 question__h3">Работаете ли вы по 249 ФЗ?</summary>
                     <p class="text-p question__p">
                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                         В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
                         используя Lorem Ipsum для распечатки образцов. 
                     </p>
-                </div>
+                </details>
 
-                <div class="question__item">
-                    <h3 class="text-h3 question__h3 close">Работаете ли вы по 249 ФЗ?</h3>
+                <details class="question__item">
+                    <summary class="text-h3 question__h3">Работаете ли вы по 249 ФЗ?</summary>
                     <p class="text-p question__p">
                         Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. 
                         Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. 
                         В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, 
                         используя Lorem Ipsum для распечатки образцов. 
                     </p>
-                </div>
+                </details>
 
             </div>
 
@@ -388,10 +420,10 @@
                     <h5 class="request__h5">Оставьте заявку, и мы свяжемся с вами!</h5>
                 </div>
                 <div class="request__flex-right">
-                    <button class="request__btn">
+                    <a class="request__btn modal-trigger" href="#modal1">
                         <img class="request__icon" src="assets/images/svg/icons/mail-black.svg" alt="mail">
                         Ваш запрос
-                    </button>
+                    </a>
                 </div>
             </div>
 
@@ -424,9 +456,9 @@
                 <img class="contacts__icon" src="assets/images/svg/icons/phone__icon.svg" alt="phone__icon">
                 <h3 class="text-h3 contacts__h3 contacts__h3-gray">ТЕЛЕФОН:</h3>
                 <h3 class="text-h3 contacts__h3">
-                    8 (812) 111-22-33
+                    <a href="tel:+78121112233">8 (812) 111-22-33</a>
                     <br>
-                    8 (812) 111-22-33
+                    <a href="tel:+78121112233">8 (812) 111-22-33</a>
                 </h3>
             </div>
 
@@ -443,7 +475,7 @@
             <div class="contacts__grid-item">
                 <img class="contacts__icon" src="assets/images/svg/icons/mail__icon.svg" alt="mail__icon">
                 <h3 class="text-h3 contacts__h3 contacts__h3-gray">E-MAIL:</h3>
-                <h3 class="text-h3 contacts__h3 contacts__h3-accent">INFO@VIP.RU</h3>
+                <h3 class="text-h3 contacts__h3 contacts__h3-accent"><a href="mailto:info@vip.ru">INFO@VIP.RU</a></h3>
             </div>
 
             </div>
@@ -469,6 +501,12 @@
 
     <!-- /.footer -->
     
+
+    <!-- js -->
+    <script type="text/javascript" src="assets/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <!-- /js -->
+
 
 </body>
 
