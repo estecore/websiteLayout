@@ -444,6 +444,7 @@ body {
 .question .section__h2 {
     margin-bottom: 50px;
 }
+
 .question__items {
 
 }
@@ -460,6 +461,7 @@ body {
     color: var(--gray-color);
     max-width: 730px;
 }
+
 .question__h3.close {
     margin-bottom: 31px;
 }
@@ -490,3 +492,46 @@ body {
 
 
 /* partners */
+
+.partners {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    background-color: var(--dark-color);
+}
+.partners__h2 {
+    color: var(--white-color);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.partners__flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.partners__item {
+    margin-right: 40px;
+    margin-bottom: 20px;
+    max-width: 170px;
+}
+.partners__item:nth-child(5n) {
+    margin-right: 0;
+}
+
+@media screen and (max-width: 1280px) {
+
+    .partners__flex {
+        justify-content: center;
+    }
+    .partners__item {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .partners__item:nth-child(5n) {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+/* reviews */
